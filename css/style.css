@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+  text-align: center;
+  margin-top: 5%;
+}
+/*container h1*/
+.h1{
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+/*tag "h1" dentro do conteiner*/
+.h1 h1{
+  text-decoration: underline;
+}
+/*form settings*/
+form{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 30vw;
+  min-width: 310px;
+}
+/*label input add buy*/
+label{
+  font-size: 1.6rem;
+}
+/*input add buy*/
+form input{
+  height: 20px;
+  margin-left: 4px;
+  padding-left: 2px;
+}
+/*button "+"*/
+.buttonAdd{
+  margin:7px;
+}
+/*general buttons*/
+button{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 100px;
+  background-color: #0083fd;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover{
+  scale: 1.1;
+  border: 1px solid #000000;
+}
+/*tag ul*/
+ul{
+  margin: 10px 0;
+}
+/*tag li*/
+li{
+  margin: 3px auto;
+  padding: 5px;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 30vw;
+  min-width: 300px;
+}
+/*p inside li*/
+li p{
+  font-size: 2rem;
+}
+
+/*responsiveness settings*/
+@media (max-width: 1300px) {
+  html{
+    font-size: 50%;
+  }
+  form{
+    flex-direction: column;
+  }
+}
